@@ -1,8 +1,8 @@
 let input = document.querySelector("#todo-input");
 let button = document.querySelector("#add-btn");
 let show = document.querySelector("#todo-list");
-let jan = document.querySelector(".empty-state");
-let item = document.querySelector(".task-count");
+let emptyState = document.querySelector(".empty-state");
+let taskCount = document.querySelector(".task-count");
 button.addEventListener("click", () => {
   let pk = input.value;
   // console.log(pk);
@@ -16,6 +16,6 @@ button.addEventListener("click", () => {
   li.textContent = input.value;
   show.prepend(li);
   input.value = "";
-  jan.remove();
-  jani.textContent = `${show.children.length} items`;
+  emptyState.remove();
+  taskCount.textContent = `${show.children.length} items`;
 });
