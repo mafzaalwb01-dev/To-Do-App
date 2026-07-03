@@ -22,7 +22,7 @@ html,
 body {
     min-height: 100%;
 }
-
+/* This is body tage and  */
 body {
     background: radial-gradient(circle at top, rgba(59, 130, 246, 0.18), transparent 28%),
         linear-gradient(180deg, #020617 0%, #0b1222 100%);
